@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    /* font family */
+    font-family: "Averta CY", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*Styles header*/
+
+.header {
+    padding: 5% 8%;
+    text-align: left;
+    height: 70vh;
+}
+
+.header h1 {
+    font-size: 30px;
+}
+
+.header h2 {
+    font-size: 80px;
+    color: teal;
+}
+
+
+/*Styles one-column*/
+
+.one-column {
+    padding: 7%;
+    float: left;
+    width: 100%;
+}
+
+.one-column h1 {
+    font-size: 2vw;
+}
+
+
+/*Styles two-column*/
+
+.two-column {
+    padding: 7%;
+    float: left;
+    width: 50%;
+}
+
+.two-column h1 {
+    font-size: 4.5vw;
+    color: grey;
+}
+
+.two-column h2 {
+    font-size: 3vw;
+}
+
+.two-column h3 {
+    font-size: 2vw;
+}
+
+.two-column img {
+    border-radius: 10px;
+}
+
+
+/*Styles four-column*/
+
+.four-column {
+    padding: 1% 7% 7% 7%;
+    float: left;
+    width: 25%;
+}
+
+.four-column h1 {
+    font-size: 1.2vw;
+}
+
+.four-column p {
+    font-size: 1vw;
+}
+
+
+/*Styles etiquetas*/
+
+#section-1 {
+    background-color: #f5eef5;
+}
+
+#section-2 {
+    background-color: #faf5f3;
+}
+
+#section-3 {
+    background-color: #f2f9f8;
+}
+
+#footer {
+    background-color: #000000;
+    color: white;
+}
+
+
+/*Responsive layout*/
+
+@media screen and (max-width:700px) {
+    /* Responsive layout */
+    .one-column h1 {
+        font-size: 3.7vw;
+    }
+    .two-column {
+        width: 100%;
+    }
+    .two-column h1 {
+        font-size: 6vw;
+        font-weight: lighter;
+    }
+    .two-column h2 {
+        font-size: 5vw;
+        font-weight: lighter;
+    }
+    .two-column h3 {
+        font-size: 4vw;
+        font-weight: lighter;
+    }
+    .two-column img {
+        width: 100%;
+    }
+    .four-column {
+        width: 50%;
+    }
+    .four-column h1 {
+        font-size: 2vw;
+    }
+    .four-column p {
+        font-size: 1.7vw;
+    }
+}
